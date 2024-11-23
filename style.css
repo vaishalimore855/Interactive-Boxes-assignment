@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.bundle-container {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: rgb(242, 87, 113);
+  font-size: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.bundle-option {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.discount {
+  background-color: rgb(242, 87, 113);
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+}
+.price {
+  font-size: 15px;
+}
+.price-original {
+  font-size: 14px;
+  color: grey;
+  text-decoration: line-through;
+}
+.summary p {
+  margin: 0 10px;
+}
+.labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bundle-option .most-popular {
+  background-color: rgb(242, 87, 113);
+  padding: 3px 5px;
+  border-radius: 1px;
+  font-size: 12px;
+  color: white;
+}
+
+.bundle-details {
+  margin-top: 10px;
+}
+
+.bundle-details.hidden {
+  display: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+select {
+  width: 48%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.bundle-option.selected {
+  border: 2px solid rgb(242, 87, 113);
+}
+.radio-button:checked {
+  accent-color: rgb(
+    242,
+    87,
+    113
+  ); /* Apply the same color to the radio button */
+}
